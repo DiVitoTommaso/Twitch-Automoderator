@@ -24,7 +24,9 @@ python twitch_moderator.py
 - The bot will give a timeout of 1m after 3 warnings, then the timeout duration grows exponentially every 3 warning.
   - 2m after 6 warnings
   - 4m after 9 warnings
-  - ...................
-  - 64m after 21 warnings and so on...
+  - 8m after 12 warnings
+  - 16m after 15 warning
+  - 32m after 18 warnings
+  - General formula: 2^(warnings / 3 - 1)m
 
 **WARNING: make sure your bot is a mod**
